@@ -81,7 +81,7 @@ $support_forum = get_post_meta( $forum_id, '_bbps_is_support');
 	function bbps_register_admin_settings() {
 
 		// Add getshopped forum section
-		add_settings_section( 'bbps-forum-setting',                __( 'User ranking system',           'bbps-forum' ), 'bbps_admin_setting_callback_getshopped_section',  'bbpress'             );
+		add_settings_section( 'bbps-forum-setting',                __( 'User Ranking',           'bbps-forum' ), 'bbps_admin_setting_callback_getshopped_section',  'bbpress'             );
 
 
 		register_setting  ( 'bbpress', '_bbps_reply_count', 'bbps_validate_options' );
@@ -139,7 +139,7 @@ $support_forum = get_post_meta( $forum_id, '_bbps_is_support');
 		add_settings_field( '_bbps_status_color_change', __( 'Change colour of resolved topics', 'bbps-forum' ), 'bbps_admin_setting_callback_color_change', 'bbpress', 'bbps-status-setting' );
 */
 /* support forum misc settings */
-		add_settings_section( 'bbps-topic_status-setting',                __( 'Support Froum Settings',           'bbps-forum' ), 'bbps_admin_setting_callback_support_forum_section',  'bbpress'             );
+		add_settings_section( 'bbps-topic_status-setting',                __( 'Support Forum Settings',           'bbps-forum' ), 'bbps_admin_setting_callback_support_forum_section',  'bbpress'             );
 
 		register_setting  ( 'bbpress', '_bbps_status_permissions_urgent', 'intval' );
 		// each drop down option for selection
