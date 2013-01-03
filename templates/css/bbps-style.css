@@ -1,0 +1,64 @@
+.resolved{
+	color:green;
+}
+
+.urgent{
+	color:red;
+}
+
+.claimed{
+	color:#efbf1c;
+}
+
+#bbps_support_forum_options,
+#bbps_support_forum_move,
+.bbps-support-forums-message
+{
+	clear: left;
+	float:left;
+	display:block;
+	display: block;
+	width:600px;
+	font-size: 14px;
+}
+
+#bbps-topic-status{
+	float:left;
+}
+
+.med-text{
+	width:80px;
+}
+
+.bbps-clear{
+	clear: both;
+}
+
+.bbps_float_left{
+	float:left;
+	width:100px;
+}
+
+.topic_stat{
+	float:left;
+	width:100px;
+}
+
+.clear{
+	clear:both;
+}
+
+.float_right{
+float:right;
+margin-right: 10px;
+}
+
+.bbps-links{
+	margin-right:3px;
+}
+
+td.bbp-topic-author, 
+td.bbp-reply-author {
+    display: block;
+    width: 106px;
+}
