@@ -3,169 +3,44 @@
 function bbps_admin_setting_callback_getshopped_section(){
 ?>
 	<p><?php _e( 'User ranking allows you to differentiate and reward your forum users with Custom Titles based on the number of topics and replies they have contributed to.', 'bbps-forum' ); ?></p>
-<?php	
+<?php
 }
 
 function bbps_admin_setting_callback_status_section(){
 ?>
 	<p><?php _e( 'Enable and configure the settings for topic statuses these will be displayed on each topic', 'bbps-forum' ); ?></p>
-<?php	
+<?php
 }
 
 function bbps_admin_setting_callback_support_forum_section(){
 ?>
 	<p><?php _e( 'Enable and configure the settings for support forums, these options will be displayed on each topic within your support forums', 'bbps-forum' ); ?></p>
-<?php	
+<?php
 
 }
 
-// worst code ever starts here but for now its jsut testing need to do this wayyyyy better
-function bbps_admin_setting_callback_reply_count_start1(){
+/*
+* WEBMAN EDITED CODE STARTS HERE
+* www.webmandesign.eu
+*/
+function bbps_admin_setting_callback_reply_count( array $args ) {
+	$i = ( isset( $args[0] ) ) ? ( absint( $args[0] ) ) : ( 1 );
 	$options = get_option('_bbps_reply_count');
-/* 	exit('<pre>'.print_r($options,1).'</pre>'); */
 	?>
-	<p>at least
-	<input  name="_bbps_reply_count[1][start]" type="text" id="bbps_reply_count_start" value="<?php if ($options[1]){ echo $options[1]['start']; } ?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts but</label></p>
+	Rank Title
+	<input  name="_bbps_reply_count[<?php echo $i; ?>][title]" type="text" id="_bbps_reply_count_title" value="<?php if (isset($options[$i]['title'])) { echo $options[$i]['title']; } ?>" />
+	is granted when a user has at least
+	<input  name="_bbps_reply_count[<?php echo $i; ?>][start]" type="text" id="bbps_reply_count_start" value="<?php if (isset($options[$i]['start'])){ echo $options[$i]['start']; } ?>" class="small-text" />
+	posts but not more than
+	<input  name="_bbps_reply_count[<?php echo $i; ?>][end]" type="text" id="bbps_reply_count_end" value="<?php if (isset($options[$i]['end'])){ echo $options[$i]['end']; }?>" class="small-text" />
+	posts
 	<?php
-}
+} // /bbps_admin_setting_callback_reply_count
+/*
+* WEBMAN EDITED CODE ENDS HERE
+* www.webmandesign.eu
+*/
 
-function bbps_admin_setting_callback_reply_count_end1(){
-	$options = get_option('_bbps_reply_count');
-?>
-<p>not more than
-	<input  name="_bbps_reply_count[1][end]" type="text" id="bbps_reply_count_end" value="<?php if ($options[1]){ echo $options[1]['end']; }?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts</label></p>
-	<!-- <hr style="width:200px;"/> -->
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_title1(){
-	$options = get_option('_bbps_reply_count');
-?><p>Rank Title </p>
-	<input  name="_bbps_reply_count[1][title]" type="text" id="_bbps_reply_count_title" value="<?php if ($options[1]) { echo $options[1]['title']; } ?>" />
-		<p><label for="_bbps_reply_count_title">is granted when a user has</label></p>
-
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_start2(){
-	$options = get_option('_bbps_reply_count');
-/* 	exit('<pre>'.print_r($options,1).'</pre>'); */
-	?>
-	<p>at least
-	<input  name="_bbps_reply_count[2][start]" type="text" id="bbps_reply_count_start" value="<?php if ($options[2]){ echo $options[2]['start']; } ?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts but</label></p>
-	<?php
-}
-
-function bbps_admin_setting_callback_reply_count_end2(){
-	$options = get_option('_bbps_reply_count');
-?>
-<p>not more than
-	<input  name="_bbps_reply_count[2][end]" type="text" id="bbps_reply_count_end" value="<?php if ($options[2]){ echo $options[2]['end']; }?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts</label></p>
-	<!-- <hr style="width:200px;"/> -->
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_title2(){
-	$options = get_option('_bbps_reply_count');
-?><p>Rank Title </p>
-	<input  name="_bbps_reply_count[2][title]" type="text" id="_bbps_reply_count_title" value="<?php if ($options[2]) { echo $options[2]['title']; } ?>" />
-		<p><label for="_bbps_reply_count_title">is granted when a user has</label></p>
-
-<?php
-}
-function bbps_admin_setting_callback_reply_count_start3(){
-	$options = get_option('_bbps_reply_count');
-/* 	exit('<pre>'.print_r($options,1).'</pre>'); */
-	?>
-	<p>at least
-	<input  name="_bbps_reply_count[3][start]" type="text" id="bbps_reply_count_start" value="<?php if ($options[3]){ echo $options[3]['start']; } ?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts but</label></p>
-	<?php
-}
-
-function bbps_admin_setting_callback_reply_count_end3(){
-	$options = get_option('_bbps_reply_count');
-?>
-<p>not more than
-	<input  name="_bbps_reply_count[3][end]" type="text" id="bbps_reply_count_end" value="<?php if ($options[3]){ echo $options[3]['end']; }?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts</label></p>
-	<!-- <hr style="width:200px;"/> -->
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_title3(){
-	$options = get_option('_bbps_reply_count');
-?><p>Rank Title </p>
-	<input  name="_bbps_reply_count[3][title]" type="text" id="_bbps_reply_count_title" value="<?php if ($options[3]) { echo $options[3]['title']; } ?>" />
-		<p><label for="_bbps_reply_count_title">is granted when a user has</label></p>
-
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_start4(){
-	$options = get_option('_bbps_reply_count');
-/* 	exit('<pre>'.print_r($options,1).'</pre>'); */
-	?>
-	<p>at least
-	<input  name="_bbps_reply_count[4][start]" type="text" id="bbps_reply_count_start" value="<?php if ($options[4]){ echo $options[4]['start']; } ?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts but</label></p>
-	<?php
-}
-
-function bbps_admin_setting_callback_reply_count_end4(){
-	$options = get_option('_bbps_reply_count');
-?>
-<p>not more than
-	<input  name="_bbps_reply_count[4][end]" type="text" id="bbps_reply_count_end" value="<?php if ($options[4]){ echo $options[4]['end']; }?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts</label></p>
-	<!-- <hr style="width:200px;"/> -->
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_title4(){
-	$options = get_option('_bbps_reply_count');
-?><p>Rank Title </p>
-	<input  name="_bbps_reply_count[4][title]" type="text" id="_bbps_reply_count_title" value="<?php if ($options[4]) { echo $options[4]['title']; } ?>" />
-		<p><label for="_bbps_reply_count_title">is granted when a user has</label></p>
-
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_start5(){
-	$options = get_option('_bbps_reply_count');
-/* 	exit('<pre>'.print_r($options,1).'</pre>'); */
-	?>
-	<p>at least
-	<input  name="_bbps_reply_count[5][start]" type="text" id="bbps_reply_count_start" value="<?php if ($options[5]){ echo $options[5]['start']; } ?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts but</label></p>
-	<?php
-}
-
-function bbps_admin_setting_callback_reply_count_end5(){
-	$options = get_option('_bbps_reply_count');
-?>
-<p>not more than
-	<input  name="_bbps_reply_count[5][end]" type="text" id="bbps_reply_count_end" value="<?php if ($options[5]){ echo $options[5]['end']; }?>" class="small-text" />
-	<label  for="_bbps_reply_count[start]">posts</label></p>
-	<!-- <hr style="width:200px;"/> -->
-<?php
-}
-
-function bbps_admin_setting_callback_reply_count_title5(){
-	$options = get_option('_bbps_reply_count');
-?><p>Rank Title </p>
-	<input  name="_bbps_reply_count[5][title]" type="text" id="_bbps_reply_count_title" value="<?php if ($options[5]) { echo $options[5]['title']; } ?>" />
-		<p><label for="_bbps_reply_count_title">is granted when a user has</label></p>
-
-<?php
-}
-
-
-// worst code ever ends here
 function bbps_admin_setting_callback_post_count(){
 ?>
 	<input id="_bbps_enable_post_count" name="_bbps_enable_post_count" type="checkbox" <?php checked( bbps_is_post_count_enabled(),1 ); ?> value="1" />
@@ -259,6 +134,7 @@ function bbps_admin_setting_callback_claim_topic_display(){
 ?>
 	<input id="bbps_claim_topic_display" name="_bbps_claim_topic_display" <?php checked( bbps_is_topic_claim_display_enabled(),1 ); ?> type="checkbox"  value="1" />
 	<label for="bbps_claim_topic_display"><?php _e( 'By selecting this option if a topic is claimed the claimed persons username will be displayed next to the topic title instead of the words [claimed], leaving this unchecked will default to [claimed]', 'bbpress' ); ?></label>
+	<br /><br /><hr />
 <?php
 
 }

@@ -7,7 +7,7 @@ function bbps_add_options
 Creates the default options
 simply extend the array to add more options.
 
-Note: These options only get added on 
+Note: These options only get added on
 activation so if your adding more options
 you will need to reactivate your plugin
 */
@@ -49,35 +49,43 @@ function bbps_is_user_rank_enabled(){
 	return get_option( '_bbps_enable_user_rank' );
 }
 
+/*
+* WEBMAN EDITED CODE STARTS HERE
+* www.webmandesign.eu
+*/
 function bbps_is_resolved_enabled(){
 	$options = get_option( '_bbps_used_status' );
-	return $options['res'];
+	return ( isset( $options['res'] ) ) ? ( $options['res'] ) : ( false );
 }
 
 function bbps_is_not_resolved_enabled(){
 	$options = get_option( '_bbps_used_status' );
-	return $options['notres'];
+	return ( isset( $options['notres'] ) ) ? ( $options['notres'] ) : ( false );
 }
 
 function bbps_is_not_support_enabled(){
 	$options = get_option( '_bbps_used_status' );
-	return $options['notsup'];
+	return ( isset( $options['notsup'] ) ) ? ( $options['notsup'] ) : ( false );
 }
 
 function bbps_is_moderator_enabled(){
 	$options = get_option( '_bbps_status_permissions' );
-	return $options['mod'];	
+	return ( isset( $options['mod'] ) ) ? ( $options['mod'] ) : ( false );
 }
 
 function bbps_is_admin_enabled(){
 	$options = get_option( '_bbps_status_permissions' );
-	return $options['admin'];	
+	return ( isset( $options['admin'] ) ) ? ( $options['admin'] ) : ( false );
 }
 
 function bbps_is_user_enabled(){
 	$options = get_option( '_bbps_status_permissions' );
-	return $options['user'];	
+	return ( isset( $options['user'] ) ) ? ( $options['user'] ) : ( false );
 }
+/*
+* WEBMAN EDITED CODE ENDS HERE
+* www.webmandesign.eu
+*/
 
 function bbps_is_topic_move_enabled(){
 	return get_option( '_bbps_enable_topic_move' );
