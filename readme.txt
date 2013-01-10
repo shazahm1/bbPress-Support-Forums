@@ -1,5 +1,5 @@
 === GetShopped Support Forums ===
-Contributors: mychelle, mufusa, getshopped
+Contributors: mychelle, mufusa, getshopped, coachbirgit
 Tags: bbPress 2.0, Support forum, resolved topics, user rankings
 Requires at least: 3.2
 Tested up to: 3.5
