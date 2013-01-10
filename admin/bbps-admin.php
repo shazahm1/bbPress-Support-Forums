@@ -35,7 +35,7 @@ This is not tested enough for people to start using so for now we will only have
 -->
 
 	<p>
-		<strong><?php _e( 'Support Forum:', 'bbps' ); ?></strong>
+		<strong><?php _e( 'Support Forum:', 'bbps-forum' ); ?></strong>
 		<input type="checkbox" name="bbps-support-forum" value="1" <?php echo $checked1; ?>/>
 		<br />
 		<!-- <small>Click here To learn more about the support forum setting.</small> -->

@@ -1,0 +1,188 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: GetShopped Support Forum Plugin v3.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-01-10 20:26:22+0000\n"
+"Last-Translator: Birgit Olzem <coachbirgit@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: admin/bbps-admin.php:38
+#@ bbps-forum
+msgid "Support Forum:"
+msgstr "Support Forum:"
+
+#: admin/bbps-admin.php:84
+#@ bbps-forum
+msgid "User Ranking"
+msgstr "Benutzer-Ranking"
+
+#: admin/bbps-admin.php:109
+#@ bbps-forum
+msgid "Show forum post count"
+msgstr "Zeige Anzahl der Beiträge"
+
+#: admin/bbps-admin.php:112
+#@ bbps-forum
+msgid "Show Rank"
+msgstr "Zeige Rang"
+
+#: admin/bbps-admin.php:117
+#@ bbps-forum
+msgid "Topic Status Settings"
+msgstr "Themen Status Einstellungen"
+
+#: admin/bbps-admin.php:120
+#@ bbps-forum
+msgid "Default Status:"
+msgstr "Standard-Status:"
+
+#: admin/bbps-admin.php:126
+#: admin/bbps-admin.php:127
+#: admin/bbps-admin.php:128
+#@ bbps-forum
+msgid "Display Status:"
+msgstr "Zeige Status:"
+
+#: admin/bbps-admin.php:133
+#@ bbps-forum
+msgid "Admin"
+msgstr "Admin"
+
+#: admin/bbps-admin.php:134
+#@ bbps-forum
+msgid "Topic Creator"
+msgstr "Themen-Ersteller"
+
+#: admin/bbps-admin.php:135
+#@ bbps-forum
+msgid "Forum Moderator"
+msgstr "Forum Moderator"
+
+#: admin/bbps-admin.php:142
+#@ bbps-forum
+msgid "Support Forum Settings"
+msgstr "Support Forum Einstellungen"
+
+#: admin/bbps-admin.php:146
+#@ bbps-forum
+msgid "Urgent Topic Status"
+msgstr "Dringender Themen Status"
+
+#: admin/bbps-admin.php:149
+#@ bbps-forum
+msgid "Move topics"
+msgstr "Themen verschieben"
+
+#: admin/bbps-admin.php:153
+#@ bbps-forum
+msgid "Assign topics"
+msgstr "Themen zuordnen"
+
+#: admin/bbps-admin.php:157
+#@ bbps-forum
+msgid "Claim topics"
+msgstr "Themen übernehmen"
+
+#: admin/bbps-admin.php:160
+#@ bbps-forum
+msgid "Display Username:"
+msgstr "Zeige Benutzername:"
+
+#: admin/bbps-settings.php:5
+#@ bbps-forum
+msgid "User ranking allows you to differentiate and reward your forum users with Custom Titles based on the number of topics and replies they have contributed to."
+msgstr "Das Benutzer-Ranking erlaubt dir Benutzer zu differenzieren und zu belohnen mit benutzerdefinierten Titeln basierend auf der Anzahl der Themen und Antworten, die sie erstellt haben."
+
+#: admin/bbps-settings.php:11
+#@ bbps-forum
+msgid "Enable and configure the settings for topic statuses these will be displayed on each topic"
+msgstr "Aktiviere und konfiguriere die Einstellungen für Themen Stati, die über jedem Thema angezeigt werden. "
+
+#: admin/bbps-settings.php:17
+#@ bbps-forum
+msgid "Enable and configure the settings for support forums, these options will be displayed on each topic within your support forums"
+msgstr "Aktiviere und konfiguriere die Einstellungen für Support Foren, diese Optionen werden bei jedem Thema innerhalb der Support Foren angezeigt."
+
+#: admin/bbps-settings.php:172
+#@ bbps-forum
+msgid "Show the users post count below their gravatar?"
+msgstr "Zeige die Anzahl der Beiträge des Benutzers unter deren Gravatar?"
+
+#: admin/bbps-settings.php:179
+#@ bbps-forum
+msgid "Display the users rank title below their gravatar?"
+msgstr "Den Benutzer Rang Titel unter dem Gravatar anzeigen?"
+
+#: admin/bbps-settings.php:191
+#@ bbps-forum
+msgid "This is the default status that will get displayed on all topics"
+msgstr "Dies ist der Standard Status, der bei allen Themen angezeigt wird. "
+
+#: admin/bbps-settings.php:198
+#@ bbps-forum
+msgid "Resolved"
+msgstr "Gelöst"
+
+#: admin/bbps-settings.php:205
+#@ bbps-forum
+msgid "Not Resolved"
+msgstr "Nicht gelöst"
+
+#: admin/bbps-settings.php:212
+#@ bbps-forum
+msgid "Not a support question"
+msgstr "Keine Support Frage"
+
+#: admin/bbps-settings.php:219
+#@ bbps-forum
+msgid "Allow the admin to update the topic status (recommended)."
+msgstr "Erlaube dem Admin, den Themen Status zu aktualisieren (empfohlen)"
+
+#: admin/bbps-settings.php:226
+#@ bbps-forum
+msgid "Allow the person who created the topic to update the status."
+msgstr "Erlaube der Person, die das Thema erstellt hat, den Themen-Status zu verändern."
+
+#: admin/bbps-settings.php:233
+#@ bbps-forum
+msgid "Allow the forum moderators to update the post status."
+msgstr "Erlaube den Foren Moderatoren, den Beitrags-Status zu aktualisieren."
+
+#: admin/bbps-settings.php:240
+#@ bbps-forum
+msgid "Allow the forum moderators and admin to move topics to other forums."
+msgstr "Erlaube den Foren Moderatoren und Admins Themen in ein anderes Forum zu verschieben"
+
+#: admin/bbps-settings.php:247
+#@ bbps-forum
+msgid "Allow the forum moderators and admin to mark a topic as Urgent, this will mark the topic title with [urgent]."
+msgstr "Erlaube Foren Moderatoren und Admins ein Thema als Dringen zu markieren. Dies markiert den Themen-Titel mit [dringend]."
+
+#: admin/bbps-settings.php:254
+#@ bbps-forum
+msgid "Allow the forum moderators and admin to claim a topic, this will mark the topic title with [claimed] but will only show to forum moderators and admin users"
+msgstr "Erlaube den Foren Moderatoren und Admins ein Thema anzunehmen. Dies markiert den Themen-Titel mit [angenommen] - dies wird nur den Foren Moderatoren und Admins angezeigt."
+
+#: admin/bbps-settings.php:261
+#@ bbps-forum
+msgid "By selecting this option if a topic is claimed the claimed persons username will be displayed next to the topic title instead of the words [claimed], leaving this unchecked will default to [claimed]"
+msgstr "Wenn diese Option aktiviert ist und ein Thema angenommen ist, wird der Benutzername angezeigt, der Person, die das Thema angenommen hat, anstatt der Status [angenommen]. Lasse dies leer, wird der Standard [angenommen] angezeigt. "
+
+#: admin/bbps-settings.php:269
+#@ bbps-forum
+msgid "Allow administrators and forum moderators to assign topics to other administrators and forum moderators"
+msgstr "Erlaube Administratoren und Foren Moderatoren die Themen an andere Administratoren und Foren Moderatoren zu delegieren."
+

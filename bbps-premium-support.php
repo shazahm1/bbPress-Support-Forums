@@ -12,7 +12,9 @@ Version: 3.0.1
 /////
 function bbps_activate() {
 	register_uninstall_hook( __FILE__, 'bbps_uninstall' );
-
+	//Load text domain
+	//load_plugin_textdomain( 'bbps', FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	load_plugin_textdomain( 'bbps-forum', FALSE, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	//include the options page now so we can save the options on activation.
 	include_once( plugin_dir_path(__FILE__).'includes/bbps-core-options.php' );
 	do_action( 'bbps-activation' );
